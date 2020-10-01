@@ -21,6 +21,19 @@
       });
     };
 
+    // x. try adding and removing div .
+    // $(document).ready(function() {
+    //   $(window).resize(function() {
+    //     if ($(this).width()< 767) {
+    //       console.log("added");
+    //       var text = "";
+    //     } else {
+    //       console.log("removed");
+    //       $("#para").remove();
+    //     }
+    //   });
+    // });
+
 
 /* 3. MainSlider-1 */
     function mainSlider() {
