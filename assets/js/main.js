@@ -1,3 +1,12 @@
+
+function EduQuoteTranslate() {
+  var x = document.getElementById("eduquote");
+  if (x.innerHTML === "आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।<br>सब्रह्मचारिभ्यः पादं पादं कालक्रमेण च ॥") {
+    x.innerHTML = "One fourth from the teacher, one fourth from own intelligence,<br>One fourth from classmates, and one fourth only with time";
+  } else {
+    x.innerHTML = "आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।<br>सब्रह्मचारिभ्यः पादं पादं कालक्रमेण च ॥";
+  }
+}
 (function ($)
   { "use strict"
   

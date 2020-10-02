@@ -654,12 +654,13 @@ z .slider-area .hero-cap h2 {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 1.2;
-	margin-bottom: 90px
+	margin-bottom: 20px
 }
+
 
 @media (max-width: 767px) {
 	.section-tittle h2 {
-		font-size: 30px;
+		font-size: 35px;
 		line-height: 1.3
 	}
 }
@@ -670,6 +671,65 @@ z .slider-area .hero-cap h2 {
 	}
 }
 
+.section-tittle h4 {
+	color: rgb(73, 67, 67);
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 20px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.section-tittle h4 {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 767px) {
+	.section-tittle h4 {
+		font-size: 14px;
+		line-height: 1.3
+	}
+}
+
+.genric-btn {
+	display: inline-block;
+	outline: none;
+	line-height: 40px;
+	padding: 0 30px;
+	font-size: .8em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.genric-btn:focus {
+	outline: none
+}
+
+.section-tittle a.genric-btn.primary {
+	color: #f4feff;
+	background:rgb(73, 67, 67);
+	border: 1px solid transparent;
+}
+
+.section-tittle a.genric-btn.primary:hover {
+	color:  #222;
+	border: 1px solid transparent;
+	background:#f4feff;
+}
+
+.genric-btn.circle {
+	border-radius: 30px
+}
+.section-tittle a.edutogglebtn{
+	margin-bottom: 90px;
+}
 .service-area .services-caption {
 	background: #fff;
 	padding: 84px 45px 56px;
@@ -684,6 +744,12 @@ z .slider-area .hero-cap h2 {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.service-area .services-caption {
 		padding: 84px 25px 56px
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.service-area .services-caption {
+		padding: 84px 25px 56px;
 	}
 }
 
@@ -725,6 +791,28 @@ z .slider-area .hero-cap h2 {
 	transition: .5s
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.service-area .services-caption .service-icon::before {
+		background-image: url(../assets/img/shape/dot-bg.png);
+		content: "";
+		width: 56px;
+		height: 98px;
+		position: absolute;
+		right: -29px;
+		top: -35px;
+	}
+
+	.service-area .services-caption .service-icon span {
+		position: relative;
+		color: #fff;
+		font-size: 25px;
+		height: 65px;
+		width: 65px;
+		display: block;
+		line-height: 65px;
+		margin-bottom: 32px;
+	}
+}
 .service-area .services-caption .service-cap h4 a {
 	font-size: 24px;
 	font-weight: 700;
