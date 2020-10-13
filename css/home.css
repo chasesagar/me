@@ -123,6 +123,83 @@ h5 a,
 h6 a {
 	color: inherit
 }
+
+/* Animations Start */ 
+.bounce-animate {
+	animation-name: float-bob;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-moz-animation-name: float-bob;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: float-bob;
+	-ms-animation-duration: 2s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-o-animation-name: float-bob;
+	-o-animation-duration: 2s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: linear
+}
+
+@-webkit-keyframes float-bob {
+	0% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px)
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px)
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px)
+	}
+}
+
+.heartbeat {
+	animation: heartbeat 1s infinite alternate
+}
+
+@-webkit-keyframes heartbeat {
+	to {
+		-webkit-transform: scale(1.7);
+		transform: scale(1.7)
+	}
+}
+
+.rotateme {
+	-webkit-animation-name: rotateme;
+	animation-name: rotateme;
+	-webkit-animation-duration: 50s;
+	animation-duration: 50s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear
+}
+
+@keyframes rotateme {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes rotateme {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+	}
+}
+/* Animation end */
 /* Header CSS */
 
 .header-area .header-top .header-info-right .header-social a i {
@@ -606,28 +683,28 @@ z .slider-area .hero-cap h2 {
 
 @media (min-width: 1601px) {
 	.section-padding2 {
-		padding-top: 0px;
+		padding-top: 200px;
 		padding-bottom: 200px
 	}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
 	.section-padding2 {
-		padding-top: 0px;
-		padding-bottom: 200px
+		padding-top: 100px;
+		padding-bottom: 100px
 	}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.section-padding2 {
-		padding-top: 0px;
-		padding-bottom: 200px
+		padding-top: 100px;
+		padding-bottom: 100px
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.section-padding2 {
-		padding-top: 00px;
+		padding-top: 100px;
 		padding-bottom: 100px
 	}
 }
@@ -749,7 +826,7 @@ z .slider-area .hero-cap h2 {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.service-area .services-caption {
-		padding: 84px 25px 56px;
+		padding: 84px 5px 56px;
 	}
 }
 
@@ -821,6 +898,11 @@ z .slider-area .hero-cap h2 {
 	display: inline-block
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.service-area .services-caption .service-cap h4 a {
+		font-size: 20px;
+	}
+}
 .service-area .services-caption .service-cap h4 a:hover {
 	color: #835ef8
 }
@@ -847,4 +929,363 @@ z .slider-area .hero-cap h2 {
 
 .services-caption.active .service-icon span {
 	background: #835ef8
+}
+
+/*  Skills Section start */
+
+.applic-apps {
+	overflow: hidden;
+	position: relative;
+	z-index: 0
+}
+
+.applic-apps .single-cases-info {
+	position: relative;
+	left: 58%;
+	margin-top: 72px
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+	.applic-apps .single-cases-info {
+		margin-top: 72px;
+		left: 33%
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.applic-apps .single-cases-info {
+		left: 38%;
+		margin-top: 0px
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.applic-apps .single-cases-info {
+		left: 17%;
+		margin-top: 40px
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.applic-apps .single-cases-info {
+		left: 1%;
+		margin-top: 20px
+	}
+}
+
+@media (max-width: 767px) {
+	.applic-apps .single-cases-info {
+		left: 1%;
+		margin-top: 10px
+	}
+}
+
+.applic-apps .single-cases-info h3 {
+	color: #2b044d;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 20px;
+	padding-right: 30px
+}
+
+@media (max-width: 767px) {
+	.applic-apps .single-cases-info h3 {
+		font-size: 30px
+	}
+}
+
+.applic-apps .single-cases-info p {
+	margin-bottom: 50px;
+	padding-right: 224px
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+	.applic-apps .single-cases-info p {
+		padding-right: 0px
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.applic-apps .single-cases-info p {
+		margin-bottom: 20px;
+		padding-right: 26px
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.applic-apps .single-cases-info p {
+		margin-bottom: 20px;
+		padding-right: 26px
+	}
+}
+
+@media (max-width: 767px) {
+	.applic-apps .single-cases-info p {
+		margin-bottom: 20px;
+		padding-right: 0px
+	}
+}
+
+.applic-apps .owl-carousel .owl-stage-outer {
+	overflow: visible;
+}
+
+.applic-apps .no-js .owl-carousel,
+.applic-apps .owl-carousel.owl-loaded {
+	overflow: hidden;
+	position: relative;
+	right: -14%
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.applic-apps .no-js .owl-carousel,
+	.applic-apps .owl-carousel.owl-loaded {
+		right: 0%
+	}
+}
+
+@media (max-width: 767px) {
+	.applic-apps .no-js .owl-carousel,
+	.applic-apps .owl-carousel.owl-loaded {
+		right: 0%
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.applic-apps .no-js .owl-carousel,
+	.applic-apps .owl-carousel.owl-loaded {
+		right: 0%
+	}
+}
+
+.applic-apps .owl-carousel .owl-item img {
+	display: block;
+	width: 100%
+}
+
+/* End skills section */
+/* Start Projects section */
+.available-app-area {
+	background-image: -moz-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+	background-image: -webkit-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+	background-image: -ms-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%)
+}
+
+.available-app-area {
+	position: relative;
+	padding-top: 220px;
+	padding-bottom: 220px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.available-app-area {
+		padding-top: 150px;
+		padding-bottom: 150px
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.available-app-area {
+		padding-top: 100px;
+		padding-bottom: 100px
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.available-app-area {
+		padding-top: 100px;
+		padding-bottom: 100px
+	}
+}
+
+@media (max-width: 767px) {
+	.available-app-area {
+		padding-top: 100px;
+		padding-bottom: 100px
+	}
+}
+
+.available-app-area .app-caption .section-tittle3 h2 {
+	color: #fff;
+	margin-bottom: 35px;
+	font-weight: 600
+}
+
+.available-app-area .app-caption p {
+	color: #fff;
+	padding-right: 52px;
+	padding-bottom: 26px
+}
+
+.available-app-area .app-caption .app-btn .app-btn1 {
+	padding-right: 15px
+}
+
+@media (max-width: 767px) {
+	.available-app-area .app-caption .app-btn .app-btn2 {
+		display: block;
+		padding-top: 10px
+	}
+}
+
+.available-app-area .app-img {
+	position: relative;
+	right: -88px
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+	.available-app-area .app-img {
+		right: 0px
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.available-app-area .app-img {
+		top: 45px;
+		right: 0
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.available-app-area .app-img {
+		top: 45px;
+		right: 0
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.available-app-area .app-img {
+		top: 45px;
+		right: 0
+	}
+}
+
+@media (max-width: 767px) {
+	.available-app-area .app-img {
+		top: 45px;
+		right: 0
+	}
+}
+
+.available-app-area .app-img img {
+	width: 100%
+}
+
+.available-app-area .app-shape .app-shape-top {
+	position: absolute;
+	top: 100px;
+	left: 125px
+}
+
+.available-app-area .app-shape .app-shape-left {
+	position: absolute;
+	left: 0;
+	bottom: 0
+}
+
+.available-app-area .app-shape .app-shape-right {
+	position: absolute;
+	right: 252px;
+	top: 208px
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+	.available-app-area .app-shape .app-shape-right {
+		display: none !important
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.available-app-area .app-shape .app-shape-right {
+		display: none !important
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.available-app-area .app-shape .app-shape-right {
+		display: none !important
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.available-app-area .app-shape .app-shape-right {
+		display: none !important
+	}
+}
+
+@media (max-width: 767px) {
+	.available-app-area .app-shape .app-shape-right {
+		display: none !important
+	}
+}
+/* End project section */
+
+/* Start connect circle  */
+.fix {
+	overflow: hidden
+}
+
+.pt-90 {
+	padding-top: 90px
+}
+.pb-90 {
+	padding-bottom: 90px
+}
+
+.say-something-aera {
+	position: relative;
+	border-bottom: 1px solid #ffc9fd
+}
+
+.say-something-aera .say-something-cap h2 {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #282828
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.say-something-aera .say-something-cap h2 {
+		font-size: 41px
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.say-something-aera .say-something-cap h2 {
+		margin-bottom: 25px
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.say-something-aera .say-something-cap h2 {
+		margin-bottom: 25px;
+		font-size: 41px
+	}
+}
+
+@media (max-width: 767px) {
+	.say-something-aera .say-something-cap h2 {
+		margin-bottom: 25px;
+		font-size: 30px
+	}
+}
+
+.say-something-aera .say-shape .say-shape1 {
+	position: absolute;
+	left: -99px;
+	bottom: -140px
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+	.say-something-aera .say-shape .say-shape1 {
+		left: -134px;
+		bottom: -215px
+	}
+}
+
+.say-something-aera .say-shape .say-shape2 {
+	position: absolute;
+	right: 0;
+	bottom: 0
 }
