@@ -807,7 +807,7 @@ z .slider-area .hero-cap h2 {
 .section-tittle a.edutogglebtn{
 	margin-bottom: 90px;
 }
-.service-area .services-caption {
+/* .service-area .services-caption {
 	background: #fff;
 	padding: 84px 45px 56px;
 	border: 1px solid transparent;
@@ -930,7 +930,7 @@ z .slider-area .hero-cap h2 {
 .services-caption.active .service-icon span {
 	background: #835ef8
 }
-
+ */
 /*  Skills Section start */
 
 .applic-apps {
@@ -1064,6 +1064,7 @@ z .slider-area .hero-cap h2 {
 	width: 100%
 }
 
+
 /* End skills section */
 /* Start Projects section */
 .available-app-area {
@@ -1164,7 +1165,8 @@ z .slider-area .hero-cap h2 {
 @media (max-width: 767px) {
 	.available-app-area .app-img {
 		top: 45px;
-		right: 0
+		right: 0;
+		margin-bottom: 60px;
 	}
 }
 
@@ -1178,10 +1180,26 @@ z .slider-area .hero-cap h2 {
 	left: 125px
 }
 
+@media (max-width: 767px) {
+	.available-app-area .app-shape .app-shape-top {
+		position: absolute;
+		top: 40px;
+		left: 35px
+	}
+}
+
 .available-app-area .app-shape .app-shape-left {
 	position: absolute;
 	left: 0;
 	bottom: 0
+}
+
+@media (max-width: 767px) {
+	.available-app-area .app-shape .app-shape-left {
+		position: absolute;
+		left: 0;
+		bottom: -40px;
+	}
 }
 
 .available-app-area .app-shape .app-shape-right {
@@ -1221,8 +1239,8 @@ z .slider-area .hero-cap h2 {
 }
 /* End project section */
 
-/* Start connect circle  */
-.fix {
+/* Start subscribe circle  */
+/* .fix {
 	overflow: hidden
 }
 
@@ -1242,18 +1260,22 @@ z .slider-area .hero-cap h2 {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #282828
+	color: #282828;
+	padding-left: 50%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.say-something-aera .say-something-cap h2 {
-		font-size: 41px
+		font-size: 41px;
+		padding-left: 50%;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.say-something-aera .say-something-cap h2 {
-		margin-bottom: 25px
+		font-size: 35px;
+		margin-bottom: 25px;
+		padding-left: 55%;
 	}
 }
 
@@ -1267,7 +1289,8 @@ z .slider-area .hero-cap h2 {
 @media (max-width: 767px) {
 	.say-something-aera .say-something-cap h2 {
 		margin-bottom: 25px;
-		font-size: 30px
+		font-size: 23px;
+		padding-left: 40%;
 	}
 }
 
@@ -1280,7 +1303,15 @@ z .slider-area .hero-cap h2 {
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
 	.say-something-aera .say-shape .say-shape1 {
 		left: -134px;
-		bottom: -215px
+		bottom: -115px
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+	.say-something-aera .say-shape .say-shape1 {
+		left: -134px;
+		bottom: 0px;
+		width: 230px;
 	}
 }
 
@@ -1288,4 +1319,49 @@ z .slider-area .hero-cap h2 {
 	position: absolute;
 	right: 0;
 	bottom: 0
+}
+
+
+
+.say-something-aera a.fa {
+	padding: 20px 35px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 80%;
+  }
+  
+  .say-something-aera a.fa:hover {
+	opacity: 0.7;
+}
+  
+.say-something-aera a.fa-facebook {
+	background: #3B5998;
+	color: white;
+} */
+
+footer{
+	height: 80px;
+	text-align: center;
+}
+
+footer p{
+	margin-top: 25px;
+	text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+	footer p {
+		font-size: 13px;
+	}
+}
+
+footer a{
+	color:rgb(249, 65, 255);
+} 
+
+footer a:hover{
+	color: rgb(73, 67, 67);
 }

@@ -320,7 +320,5 @@ function EduQuoteTranslate() {
         });
       }
 
-
-
-
 })(jQuery);
+
